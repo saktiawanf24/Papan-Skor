@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context="com.example.dimfake.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1"/>
+
+    <EditText
+        android:layout_below="@+id/label1"
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Masukkan Nama"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_below="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2"/>
+
+    <EditText
+        android:layout_below="@+id/label2"
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="Masukkan Nama"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:onClick="onNextButtonClicked"
+        android:text="Next" />
+
+</RelativeLayout>
